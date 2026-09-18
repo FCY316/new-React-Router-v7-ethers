@@ -3,7 +3,7 @@ export const evmChain = [1677];
 export const chainParams: any = {
   1677: {
     chainId: 1677,
-    chainName: "intl-text.net", // 自定义链的名称
+    chainName: "InterstellarChain", // 自定义链的名称
     nativeCurrency: {
       name: "HUGE",
       symbol: "HUGE",
