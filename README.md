@@ -71,6 +71,20 @@ toast.error("操作失败");
 
 UI 保留原来的 Button/DialogOverlay forwardRef 兼容改动，并非完全未修改的官方源码；React 19 下仍可正常使用。新项目不需要旧 react-i18next 类型补丁，不包含 patch-package、antd、react-toastify 或 CRA/CRACO。
 
+## 品牌图标与链接分享
+
+以下资源均由 `app/root.tsx` 统一声明，替换品牌时应一并更新。`site.webmanifest` 是严格 JSON，不能添加注释，因此在此记录用途。
+
+| 文件 | 用途 |
+| --- | --- |
+| `public/favicon.ico` | 浏览器标签页与收藏夹图标。 |
+| `public/icon-192.png` | Android / Chrome 安装 PWA 时的标准图标。 |
+| `public/icon-512.png` | 高分辨率 PWA 图标；同时作为聊天平台链接预览的 Logo。 |
+| `public/apple-touch-icon.png` | iPhone / iPad 添加到主屏幕时的图标。 |
+| `public/site.webmanifest` | PWA 名称、启动模式、主题色及 192/512 图标清单。 |
+
+聊天软件的链接预览由 `og:title`、`og:description`、`og:image` 控制，不读取 favicon 或 PWA 清单。目前介绍文字为 `xxxxxx`，确认文案后在 `app/root.tsx` 的 `socialDescription` 中替换即可。分享图片使用相对路径 `/icon-512.png`，不要把给后端 API 使用的 `VITE_APP_URL` 填进分享字段。
+
 钱包弹窗可在小屏滚动，全局提示考虑手机安全区域。Tailwind v4 面向现代浏览器，旧手机浏览器需要设备实测。
 
 ## 测试与部署

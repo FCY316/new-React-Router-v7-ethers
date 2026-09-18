@@ -7,8 +7,12 @@
 
 /* 全局导航处于 pending 时，进度条缓慢逼近终点；路由完成后由组件补满并淡出。 */
 @keyframes route-progress {
-  from { transform: scaleX(0.15); }
-  to { transform: scaleX(0.85); }
+  from {
+    transform: scaleX(0.15);
+  }
+  to {
+    transform: scaleX(0.85);
+  }
 }
 
 /* Nova 预设的语义令牌，使官方 Button、Dialog、Sonner 等组件共享同一套主题。 */
