@@ -1,0 +1,8 @@
+{
+    "com": {
+        "noData": "データがありません",
+        "loading": "読み込み中...",
+        "reachedEnd": "これ以上はありません",
+        "chainNotSupported": "現在のチェーンは{{chain}}です。サービスを提供できません。"
+    }
+}

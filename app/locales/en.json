@@ -1,0 +1,8 @@
+{
+    "com": {
+        "noData": "No data available",
+        "loading": "Loading...",
+        "reachedEnd": "You've reached the end",
+        "chainNotSupported": "You are currently on chain {{chain}}; service is unavailable."
+    }
+}

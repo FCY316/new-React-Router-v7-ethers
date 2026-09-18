@@ -1,0 +1,8 @@
+{
+    "com": {
+        "noData": "暂无数据",
+        "loading": "加载中...",
+        "reachedEnd": "到底了",
+        "chainNotSupported": "您当前处于{{chain}}链，无法为您提供服务。"
+    }
+}

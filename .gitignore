@@ -1,5 +1,10 @@
 .DS_Store
 .env
+.env.*
+# 这三份只保存公开的默认变量，随模板提交，保证新成员拉取项目即可按 mode 启动。
+!.env.development
+!.env.test
+!.env.production
 /node_modules/
 
 # React Router
